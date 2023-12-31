@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="" class="logo">Portfolio.</a>
+
+        <nav class="navbar">
+            <a href="#home" onclick="activeLink()" style="--i:1;" class="active">Home</a>
+            <a href="#about" onclick="activeLink()" style="--i:2;">About</a>
+            <a href="#services" onclick="activeLink()" style="--i:3;">Services</a>
+            <a href="#projects" onclick="activeLink()" style="--i:4;">Portfolio</a>
+            <a href="#contact" onclick="activeLink()" style="--i:5;">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="home show-animation" id="home">
+            <div class="home-content">
+                <h3>Hello, It's Me</h3>
+                <h1>John Doe</h1>
+                <h3>And I'm a <span class="multiple-text"></span></h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem ab qui, rerum aspernatur voluptas vitae.</p>
+                <div class="social-media">
+                    <a href="" style="--i:7;"><i class='bx bxl-facebook'></i></a>
+                    <a href="" style="--i:8;"><i class='bx bxl-twitter' ></i></a>
+                    <a href="" style="--i:9;"><i class='bx bxl-instagram-alt' ></i></a>
+                    <a href="" style="--i:10;"><i class='bx bxl-linkedin' ></i></a>
+                </div>
+                <a href="" class="btn">Download CV</a>
+            </div>
+            <div class="home-img">
+                <img src="model.png" alt="">
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="model.png" alt="">
+            </div>
+            <div class="about-content">
+                <h1>About <span>Me</span></h1>
+                <h3>Frontend Developer!</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque illo totam necessitatibus possimus saepe eaque laudantium quo nihil, explicabo mollitia dolores, accusamus corporis similique vero accusantium aliquam voluptatibus incidunt atque iusto enim unde deserunt ut? Totam, necessitatibus dicta! Similique debitis dolorum consequuntur iste nisi minus eaque odit officiis perspiciatis. Sunt soluta facere quidem nobis libero ea nulla molestias quis dignissimos?.</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <h1>Our <span>Services</span></h1>
+            <div class="services-content">
+                <div class="service-card" style="--i:2;">
+                    <a href="#"><i class='bx bx-code-alt'></i></a>    
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, blanditiis vitae consequuntur dicta, accusantium, dolorem amet cumque optio ut fugit reiciendis laborum iure totam sint.</p>
+                    <a href="" class="btn">Read More</a>
+                </div>
+                <div class="service-card" style="--i:3;">
+                    <a href="#"><i class='bx bxs-paint'></i></a>    
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, blanditiis vitae consequuntur dicta, accusantium, dolorem amet cumque optio ut fugit reiciendis laborum iure totam sint.</p>
+                    <a href="" class="btn">Read More</a>
+                </div>
+                <div class="service-card" style="--i:4;">
+                    <a href="#"><i class='bx bx-bar-chart-alt'></i></a>    
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, blanditiis vitae consequuntur dicta, accusantium, dolorem amet cumque optio ut fugit reiciendis laborum iure totam sint.</p>
+                    <a href="" class="btn">Read More</a>
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <h1>Latest <span>Project</span></h1>
+            
+            <div class="projects-content">
+                <div class="projects-card" style="--i:3;">
+                    <img src="https://qph.cf2.quoracdn.net/main-qimg-166abf8fe433e07acdea9c2b36abfe06-lq" alt="">
+                </div>
+                <div class="projects-card" style="--i:4;">
+                    <img src="https://i.pinimg.com/736x/6a/be/29/6abe29c632f3a22831fdd36cffe06866.jpg" alt="">
+                </div>
+                <div class="projects-card" style="--i:5;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0i2gb2Cc_h6rqjn12NPrOWkMNUBOq1o-mVTI5Kny7gacD5dLnVNDWKrQjOhmIuDhWWHY&usqp=CAU" alt="">
+                </div>
+                <div class="projects-card" style="--i:3;">
+                    <img src="https://yakovfain.files.wordpress.com/2013/04/dsc03412.jpg?w=700" alt="">
+                </div>
+                <div class="projects-card" style="--i:4;">
+                    <img src="https://assets.bbhub.io/company/sites/51/2020/04/Nicolas-Limare-1024x576.jpeg" alt="">
+                </div>
+                <div class="projects-card" style="--i:5;">
+                    <img src="https://img.freepik.com/premium-photo/computer-monitors-showing-parsing-code-empty-it-agency-office-security-system-compiling-data-algorithms-background-artificial-intelligence-servers-cloud-computing-data-room_482257-52641.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h1>Contact <span>Me!</span></h1>
+            <div class="contact-form">
+                <div class="name-email">
+                    <input type="text" placeholder="Full Name" name="fullName">
+                    <input type="email" placeholder="Email Address" name="email">
+                </div>
+                <div class="mobile-address">
+                    <input type="text" placeholder="Mobile Number" name="mobile">
+                    <input type="text" placeholder="Actual Address" name="address">
+                </div>
+                <div class="message">
+                    <textarea placeholder="Your Message" name="message" id="" cols="49" rows="10"></textarea>
+                </div>
+                <a href="" class="btn">Send Message</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        function activeLink(event) {
+            const clickedElement = event.target;
+
+            // Remove 'active' class from all links
+            const allLinks = document.querySelectorAll('a');
+            allLinks.forEach(link => link.classList.remove('active'));
+
+            // Add 'active' class to the clicked element
+            clickedElement.classList.add('active');
+        }    
+    </script>
+    <script>
+        var typed = new Typed(".multiple-text", {
+            strings: ['Fullstack Developer', 'Android Developer', 'Machine Learning', 'Data Science'],
+            typeSpeed : 100,
+            backSpeed: 30,
+            backDelay: 1000,
+            loop: true
+        })
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let sections = document.querySelectorAll("section");
+
+            // Options for the Intersection Observer
+            const options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5, // Adjust the threshold as needed
+            };
+
+            // Callback function when the observed element enters or exits the viewport
+            const callback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show-animation");
+                    } else {
+                        entry.target.classList.remove("show-animation");
+                    }
+                });
+            };
+
+            // Create the Intersection Observer instance
+            const observer = new IntersectionObserver(callback, options);
+
+            // Observe each section
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+
+</body>
+</html>
